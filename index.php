@@ -21,10 +21,22 @@ require_once "./functions.php";
     <!-- CDN VueJS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+    <!-- CDN Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <title>ToDo List</title>
   </head>
 
   <body>
-    
+  <div id="app">
+      <h1>{{ title }}</h1>
+  </div>
+
+  
+    <!-- link JS -->
+    <script src="./main.js"></script>
   </body>
 </html>

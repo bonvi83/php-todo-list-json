@@ -8,7 +8,7 @@ Deve essere anche gestita la persistenza dei dati leggendoli da, e scrivendoli i
 
 Html, CSS, VueJS (importato tramite CDN), Axios, PHP, JSON
 
-**Consigli**
+### **Consigli**
 
 Nello svolgere l’esercizio seguite un approccio graduale.
 
