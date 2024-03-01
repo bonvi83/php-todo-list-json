@@ -21,7 +21,7 @@ $todo_json = json_encode($todo_array);
 
 
 // con header il browser capisce che riceverà un file json (e non lo legge come un semplice codice html)
-header ("Content-Type: applicatione/json");
+header ("Content-Type: application/json");
 
 
 // stampo i dati da visualizzare

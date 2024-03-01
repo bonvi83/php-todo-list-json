@@ -39,8 +39,11 @@ const app = createApp({
 
       axios
         .post(`../backend/api/store-item.php`, data, params)
-        .then((respone) => {
-          console.log(respone.data);
+        .then((response) => {
+          console.log(response.data);
+
+          // prendo la risposta e aggiorno la lista
+          this.todoList = response.data;
         });
     },
   },
