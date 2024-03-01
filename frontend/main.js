@@ -18,6 +18,7 @@ const app = createApp({
       // faccio una chiamata axios all'API
       axios.get(`../backend/api/get-list.php`).then((response) => {
         this.todoList = response.data;
+        console.log(this.todoList);
       });
     },
 
@@ -29,20 +30,18 @@ const app = createApp({
       this.newItem = ``;
 
       // invio il nuovo item inserito
-      const data = {
-        params: { item },
-      };
+      const data = { item };
 
       // axios POST: header che conterrà un oggetto con una coppia chiave-valore Content-Type multipart/form-data
       const params = {
-        headers: { `Content-Type`: `multipart/form-data` },
+        headers: { "Content-Type": "multipart/form-data" },
       };
 
       axios
-      .post(`../backend/api/store-item.php`, data, params)
-      .then ((respone) => {
-        console.log(respone.data);
-      });
+        .post(`../backend/api/store-item.php`, data, params)
+        .then((respone) => {
+          console.log(respone.data);
+        });
     },
   },
 
