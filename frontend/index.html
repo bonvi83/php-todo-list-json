@@ -27,8 +27,36 @@
   <body>
     <div class="container mt-3" id="app">
       <h1>{{ title }}</h1>
-      <div class="card" style="width: 18rem">
-        <div class="card-header">CONTROLLI DA ESEGUIRE:</div>
+
+      <div class="card">
+        <div class="card-body">Cose da fare</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" v-for="item in todoList">{{item}}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="input-group">
+            <input
+              v-model="newItem"
+              @keyUp.enter="addTodoLIst()"
+              type="text"
+              class="form-control"
+              placeholder="Nuovo item"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              @click="addTodoLIst()"
+              class="btn btn-outline-success"
+              type="button"
+              id="button-addon2"
+            >
+              Aggiungi
+            </button>
+          </div>
+        </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item" v-for="item in todoList">{{item}}</li>
         </ul>

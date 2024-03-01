@@ -1,6 +1,6 @@
-<!-- creo un API di lettura e con questo php riesco a leggere il file json -->
-
 <?php
+// creo un API di lettura e con questo php riesco a leggere il file json
+
 
 // prendo il contenuto del file todolist.json sotto forma di stringa
 $json_list_content = file_get_contents(`../data/todolist.json`);
