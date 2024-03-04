@@ -40,7 +40,7 @@
           <div class="input-group">
             <input
               v-model="newItem"
-              @keyUp.enter="addTodoLIst()"
+              @keyUp.enter="addTodoItem()"
               type="text"
               class="form-control"
               placeholder="Nuovo item"
@@ -48,7 +48,7 @@
               aria-describedby="button-addon2"
             />
             <button
-              @click="addTodoLIst()"
+              @click="addTodoItem()"
               class="btn btn-outline-success"
               type="button"
               id="button-addon2"
